@@ -6,7 +6,7 @@ import "../styles/globals.css";
 
 import { Exo_2 } from "@next/font/google";
 import { useState } from "react";
-import Notification from "../components/ui/icons/notification";
+import Notification from "../components/ui/icons/Notification";
 import Search from "../components/ui/icons/Search";
 import Navbar from "../components/layout/Navbar";
 import Aside from "../components/layout/Aside";

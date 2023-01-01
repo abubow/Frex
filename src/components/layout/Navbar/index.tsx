@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Search from "../../ui/icons/Search";
-import Notification from "../../ui/icons/notification";
+import Notification from "../../ui/icons/Notification";
 import ChevronDown from "../../ui/icons/ChevronDown";
 
 type Props = {
