@@ -1,25 +1,24 @@
 import React from "react";
-import Home from "../../components/ui/icons/Home";
 import ArrowRight from "../../components/ui/icons/ArrowRight";
-import Download from "../../components/ui/icons/Download";
-import PaperDownload from "../../components/ui/icons/PaperDownload";
-import Wallet from "../../components/ui/icons/Wallet";
-import Naruto from "../../components/ui/icons/Naruto";
-import Tv from "../../components/ui/icons/Tv";
 import Documentary from "../../components/ui/icons/Documentary";
+import Download from "../../components/ui/icons/Download";
+import Home from "../../components/ui/icons/Home";
 import MusicNote from "../../components/ui/icons/MusicNote";
+import Naruto from "../../components/ui/icons/Naruto";
+import PaperDownload from "../../components/ui/icons/PaperDownload";
+import Tv from "../../components/ui/icons/Tv";
+import Wallet from "../../components/ui/icons/Wallet";
 type MenuStructure = {
     [key: string]: {
         id: string;
         text: string;
         path: string;
-        icon: React.ReactNode;
         subMenu: {
             [key: string]: {
                 id: string;
                 text: string;
                 path: string;
-                icon: React.ReactNode | string;
+                icon: React.ReactElement;
             };
         };
     };
@@ -29,7 +28,6 @@ export const menuStructure: MenuStructure = {
         id: "menu",
         text: "Menu",
         path: "/menu",
-        icon: "Menu",
         subMenu: {
             discover: {
                 id: "discover",
@@ -67,7 +65,6 @@ export const menuStructure: MenuStructure = {
         id: "category",
         text: "Category",
         path: "/category",
-        icon: "Category",
         subMenu: {
             movies: {
                 id: "movies",
