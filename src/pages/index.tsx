@@ -5,21 +5,21 @@ import Head from "next/head";
 // import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
-  // const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
+    // const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
 
-  return (
-    <>
-      <Head>
-        <title>Frex</title>
-        <meta name="description" content="A torrent streaming service" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <>
+            <Head>
+                <title>Frex</title>
+                <meta name="description" content="A torrent streaming service" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 
-      <main className="mx-auto flex min-h-screen flex-col items-center justify-center p-4">
-        <h1 className="text-4xl font-bold text-gray-700">Frex</h1>
-      </main>
-    </>
-  );
+            <main className="mx-auto flex min-h-screen flex-col items-center justify-center p-4">
+                <h1 className="text-4xl font-bold text-gray-700">Frex</h1>
+            </main>
+        </>
+    );
 };
 
 export default Home;

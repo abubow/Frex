@@ -1,13 +1,13 @@
 import React from "react";
-import ArrowRight from "../../components/ui/icons/ArrowRight";
-import Documentary from "../../components/ui/icons/Documentary";
-import Download from "../../components/ui/icons/Download";
-import Home from "../../components/ui/icons/Home";
-import MusicNote from "../../components/ui/icons/MusicNote";
-import Naruto from "../../components/ui/icons/Naruto";
-import PaperDownload from "../../components/ui/icons/PaperDownload";
-import Tv from "../../components/ui/icons/Tv";
-import Wallet from "../../components/ui/icons/Wallet";
+import ArrowRight from "../../components/svgs/icons/ArrowRight";
+import Documentary from "../../components/svgs/icons/Documentary";
+import Download from "../../components/svgs/icons/Download";
+import Home from "../../components/svgs/icons/Home";
+import MusicNote from "../../components/svgs/icons/MusicNote";
+import Naruto from "../../components/svgs/icons/Naruto";
+import PaperDownload from "../../components/svgs/icons/PaperDownload";
+import Tv from "../../components/svgs/icons/Tv";
+import Wallet from "../../components/svgs/icons/Wallet";
 type MenuStructure = {
     [key: string]: {
         id: string;

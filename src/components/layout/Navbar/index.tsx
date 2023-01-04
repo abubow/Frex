@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Search from "../../ui/icons/Search";
-import Notification from "../../ui/icons/Notification";
-import ChevronDown from "../../ui/icons/ChevronDown";
+import { useState } from "react";
+import ChevronDown from "../../svgs/icons/ChevronDown";
+import Notification from "../../svgs/icons/Notification";
+import Search from "../../svgs/icons/Search";
 
 type Props = {
   font: string;

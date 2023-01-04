@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { cloneElement, useState } from "react";
 import { menuStructure } from "../../../helper/data/aside";
-import Moon from "../../ui/icons/Moon";
-import Sun from "../../ui/icons/Sun";
+import Moon from "../../svgs/icons/Moon";
+import Sun from "../../svgs/icons/Sun";
 
 const Aside = () => {
     const [activeMenu, setActiveMenu] = useState<string | undefined>("Discover");
@@ -46,7 +46,7 @@ const Aside = () => {
                                             >
                                                 {menuStructure[key]?.subMenu[subKey]?.icon
                                                     ? menuStructure[key]?.subMenu[subKey]?.icon &&
-                                                      React.cloneElement(
+                                                      cloneElement(
                                                           menuStructure[key]?.subMenu[subKey]
                                                               ?.icon as React.ReactElement,
                                                           {
@@ -82,14 +82,13 @@ const Aside = () => {
             })}
             <section>
                 <switch
-                    className="relative flex cursor-pointer flex-row items-center justify-start gap-10 p-2 mb-8 rounded-xl bg-white bg-opacity-10"
+                    className="relative mb-8 flex cursor-pointer flex-row items-center justify-start gap-10 rounded-xl bg-white bg-opacity-10 p-2"
                     onClick={() => {
                         setActiveMode(activeMode === "dark" ? "light" : "dark");
                     }}
                 >
                     <span className="relative z-10 flex items-center justify-center gap-2 tracking-tighter text-[#808191]">
-                        <Moon fill={activeMode === "dark" ? "#fff"
-                         : "#808191"} />
+                        <Moon fill={activeMode === "dark" ? "#fff" : "#808191"} />
                         <h6
                             className={`${
                                 activeMode === "dark"
