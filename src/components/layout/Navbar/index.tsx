@@ -30,6 +30,8 @@ const Navbar = ({ font }: Props) => {
             onChange={(e) => {
               setSearch(e.target.value);
               console.log(search);
+              setPfpPath("https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50");
+              setUserName("Demo User");
             }}
           />
           <button className="absolute right-5 z-30 rounded-lg py-2 px-2 transition-colors duration-300 motion-safe:hover:bg-gray-200">
